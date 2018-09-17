@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            float: left;
+        }
+    </style>
+    <script>
+     function nameNa() {
+          var  pw1=document.getElementById("pwd1").value;
+          var pw2=document.getElementById("pwd2").value;
+        if (pw1==pw2){
+            alert("密码一致");
+            return;
+        }else {
+             alert("密码不一致");
+             return
+        }
+        var fm=document.getElementById("f1");
+         fm.submit()
+     }
+    </script>
+</head>
+<body>
+<form action="/zhuce/" method="post" id="f1" >
+    用户名<input type="text" name="name">
+    密  码<input type="text" name="password" id="pwd1" value=""><
+    确认密码<input type="text" name="password1" id="pwd2" value=""><br>
+    <input type="button" value="注册" onclick="nameNa()">
+</form>
+</body>
+</html>

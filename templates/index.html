@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block title %}
+    首页
+{% endblock %}
+{% block css %}
+    <style type="text/css">
+      #main>ul>li{
+          float: left;
+          width: 20%;
+          padding: 5px;
+      }
+    #main>ul>li img{
+    }
+    </style>
+{% endblock %}
+{% block jq %}
+
+{% endblock %}
+{% block main %}
+    <div id="main">
+    {% for img in imgs %}
+    <ul>
+        <li >
+            <a href="">
+                <img src="{{ img.img_url }}">
+                <p>
+                 福利
+                </p>
+            </a>
+        </li>
+    </ul>
+    {% endfor %}
+    </div>
+{% endblock %}

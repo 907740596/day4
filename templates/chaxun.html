@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <tr>
+        {% for fa in us %}
+            <tr>  {{ fa.faname }}  </tr>
+            <tr> {% for son in fa.sb %}
+                <tr>{{ son.soname }}</tr>
+            {% endfor %}
+            </tr>
+
+        {% endfor %}
+    </tr>
+</div>
+</body>
+</html>
